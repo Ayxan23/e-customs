@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 100vh;
+  text-align: center;
+}
+
+.wrapper span {
+  color: #ffc800a8;
+}
+
+.wrapper p {
+  color: var(--main-color);
+  font-size: 20px;
+}
+
+.wrapper a {
+  font-weight: 600;
+  text-decoration: underline;
+  padding: 5px 8px;
+  border-radius: 8px;
+}
+
+.wrapper a:hover {
+  background-color: #1647a31b;
+}

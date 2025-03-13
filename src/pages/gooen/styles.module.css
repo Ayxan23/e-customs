@@ -1,30 +1,8 @@
-.title {
-  user-select: none;
-  margin-top: 40px;
-}
-.title h2 {
-  font-size: 22px;
-  font-weight: 500;
-}
-.title span {
-  margin: 0 5px;
-  font-size: 12px;
-}
-.title p {
-  color: #6b6b6b;
-}
-.title a {
-  color: #1647a3;
-}
-.title a:hover {
-  text-decoration: underline;
-}
-
 /* level */
 .level {
   user-select: none;
   margin-top: 20px;
-  border: 1px solid rgb(225, 225, 225);
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 24px;
   display: flex;
@@ -64,7 +42,7 @@
   color: rgb(74, 74, 74) !important;
 }
 .active span:first-child {
-  background-color: #1647a3 !important;
+  background-color: var(--main-color) !important;
 }
 
 @media screen and (max-width: 550px) {
@@ -79,8 +57,8 @@
 /* info */
 .info {
   user-select: none;
-  color: rgb(13, 60, 97);
-  background-color: #e8f4fd;
+  color: var(--info-color);
+  background-color: var(--info-bg);
   padding: 24px 16px;
   display: flex;
   justify-content: center;
@@ -93,7 +71,7 @@
 
 .info span {
   min-width: 30px;
-  color: #1647a3;
+  color: var(--main-color);
 }
 
 .info h6 {
@@ -110,7 +88,7 @@
 
 /* .form */
 .formWrapper {
-  border: 1px solid rgb(225, 225, 225);
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   display: flex;
   justify-content: center;
@@ -148,18 +126,18 @@
   font-weight: 500;
   margin-top: 20px;
   padding: 30px 40px;
-  border: 1px solid rgb(225, 225, 225);
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   color: rgb(111, 111, 111);
   /* display: none; */
 }
 
 .second div p {
-  border: 1px solid rgb(225, 225, 225);
+  border: 1px solid var(--border-color);
   border-radius: 5px;
   padding: 5px 10px;
   background-color: #f4f4f4;
-  color: #1647a3;
+  color: var(--main-color);
   text-transform: uppercase;
   font-weight: 400;
   margin-top: 5px;
@@ -167,14 +145,14 @@
 
 /* final */
 .final {
-  border: 1px solid rgb(225, 225, 225);
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   height: 55vh;
   margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #1647a3;
+  color: var(--main-color);
   font-weight: 600;
   padding: 20px;
 }
@@ -192,7 +170,7 @@
 }
 
 .final button {
-  background-color: #1647a3;
+  background-color: var(--main-color);
   color: white;
   padding: 10px 20px;
   border-radius: 8px;
@@ -205,7 +183,7 @@
 
 /* .print */
 .print {
-  border: 2px solid #1647a3;
+  border: 2px solid var(--main-color);
   border-radius: 12px;
   display: flex;
   justify-content: center;
@@ -235,5 +213,5 @@
 .print p:first-child {
   align-items: end;
   font-weight: 400;
-  color: #1647a3;
+  color: var(--main-color);
 }

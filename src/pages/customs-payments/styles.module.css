@@ -1,140 +1,119 @@
-.title {
-    margin-top: 40px;
-  }
-  .title h2 {
-    font-size: 22px;
-    font-weight: 500;
-  }
-  .title span {
-    margin: 0 5px;
-    font-size: 12px;
-  }
-  .title p {
-    color: #6b6b6b;
-  }
-  .title a {
-    color: #1647a3;
-  }
-  .title a:hover {
-    text-decoration: underline;
-  }
-  
-  /* .inputBox */
-  .inputBox {
-    border: 1px solid rgb(225, 225, 225);
-    padding: 16px 40px;
-    border-radius: 8px;
-    margin-top: 20px;
-  }
-  
-  .inputBox h6 {
-    font-size: 17px;
-    margin-bottom: 8px;
-  }
-  
+/* .inputBox */
+.inputBox {
+  border: 1px solid var(--border-color);
+  padding: 16px 40px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.inputBox h6 {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.inputBox form {
+  display: flex;
+  gap: 15px;
+  align-items: end;
+}
+.inputBox label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.inputBox :where(option, input, select) {
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.inputBox button {
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+  min-width: 80px;
+}
+
+.inputBox button:hover {
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+}
+@media screen and (max-width: 650px) {
   .inputBox form {
-    display: flex;
-    gap: 15px;
-    align-items: end;
-  }
-  .inputBox label {
-    display: flex;
     flex-direction: column;
-    gap: 5px;
-    font-weight: 500;
-    width: 100%;
   }
-  
-  .inputBox :where(option, input, select) {
-    border: 1px solid rgb(225, 225, 225);
-    border-radius: 5px;
-    outline: none;
-    width: 100%;
-    padding: 8px;
-    cursor: pointer;
-  }
-  
-  .inputBox button {
-    border: 1px solid rgb(225, 225, 225);
-    border-radius: 5px;
-    padding: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 40px;
-    min-width: 80px;
-  }
-  
-  .inputBox button:hover {
-    border: 1px solid #1647a3;
-    color: #1647a3;
-  }
-  @media screen and (max-width: 650px) {
-    .inputBox form {
-      flex-direction: column;
-    }
-  }
-  /* .tableBox */
-  .tableBox {
-    position: relative;
-    border: 1px solid rgb(225, 225, 225);
-    padding: 16px 40px;
-    min-height: 300px;
-    border-radius: 8px;
-    margin-top: 20px;
-  }
-  
-  .tableBox h5 {
-    margin: 0 auto;
-    text-align: center;
-    border-bottom: 2px solid #1647a3;
-    width: 100px;
-    padding: 8px;
-    margin-bottom: 20px;
-  }
-  
-  .tableBox table {
-    border-collapse: collapse;
-    width: 100%;
-    text-align: center;
-  }
-  
-  .tableBox :where(td, th) {
-    padding: 8px;
-  }
-  
-  .tableBox thead {
-    border-bottom: 1px solid rgb(225, 225, 225);
-    color: #1647a3;
-  }
-  .notFound {
-    position: absolute;
-    top: 50px;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  /* info */
-  .info {
-    color: rgb(13, 60, 97);
-    background-color: #e8f4fd;
-    padding: 24px 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    border-radius: 8px;
-  }
-  
-  .info span {
-    min-width: 30px;
-    color: #1647a3;
-  }
-  
-  .info h6 {
-    margin-bottom: 5px;
-    font-weight: 500;
-  }
+}
+/* .tableBox */
+.tableBox {
+  position: relative;
+  border: 1px solid var(--border-color);
+  padding: 16px 40px;
+  min-height: 300px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.tableBox h5 {
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 2px solid var(--main-color);
+  width: 100px;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+.tableBox table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+.tableBox :where(td, th) {
+  padding: 8px;
+}
+
+.tableBox thead {
+  border-bottom: 1px solid var(--border-color);
+  color: var(--main-color);
+}
+.notFound {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* info */
+.info {
+  color: var(--info-color);
+  background-color: var(--info-bg);
+  padding: 24px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.info span {
+  min-width: 30px;
+  color: var(--main-color);
+}
+
+.info h6 {
+  margin-bottom: 5px;
+  font-weight: 500;
+}

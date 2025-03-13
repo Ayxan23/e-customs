@@ -1,83 +1,83 @@
 [
-    {
-      "id": 1,
-      "title": "Elektron gömrük ödənişləri",
-      "desc": "Bütün növ gömrük ödənişlərini xidmət vasitəsi ilə ödəyə bilərsiniz.",
-      "icon": "#d46139",
-      "pdfLink": "https://c2b-fbusiness.customs.gov.az/api/v1/notification/instructionFile/8",
-      "videoLink": "",
-      "link": "/customs-payments"
-    },
-    {
-      "id": 2,
-      "title": "GÖÖEN",
-      "desc": "VÖEN-i olmayan fiziki şəxslərə verilir və şəxsə aid mallar üzərində gömrük rəsmiləşdirilməsi aparmaq üçün istifadə olunur.",
-      "icon": "",
-      "pdfLink": "https://c2b-fbusiness.customs.gov.az/api/v1/notification/instructionFile/8",
-      "videoLink": "https://www.youtube.com/embed/Xo0unMOot8E",
-      "link": "/gooen"
-    },
-    {
-      "id": 3,
-      "title": "E-növbə",
-      "desc": "Nəqliyyat vasitəsi ilə sərhəd buraxılış məntəqələrindən tez və rahat keçid üçün əvvəlcədən növbə tuta bilərsiniz.",
-      "icon": "",
-      "pdfLink": "",
-      "videoLink": "",
-      "link": "/home"
-    },
-    {
-      "id": 4,
-      "title": "Mal nomenklaturası",
-      "desc": "Malların nomenklaturası və onlara tətbiq olunan tarif dərəcələri barədə məlumat əldə edə bilərsiniz. ",
-      "icon": "",
-      "pdfLink": "",
-      "videoLink": "",
-      "link": "/customs-payments"
-    },
-    {
-      "id": 5,
-      "title": "Sərhədkeçmə məhdudiyyətinin yoxlanılması",
-      "desc": "Dövlət Gömrük Komitəsi tərəfindən gömrük öhdəlikləri üzrə sərhədkeçməyə qoyulan məhdudiyyət barədə məlumat əld...",
-      "icon": "",
-      "pdfLink": "https://c2b-fbusiness.customs.gov.az/api/v1/notification/instructionFile/8",
-      "videoLink": "https://www.youtube.com/embed/VMicweapykI",
-      "link": "/customs-payments"
-    },
-    {
-      "id": 6,
-      "title": "Gömrük ödənişlərini (rüsumları) özün hesabla",
-      "desc": "İdxal və ixrac etdiyiniz mallar üzrə gömrük ödənişlərini (rüsumlarını) özünüz hesablaya bilərsiniz.",
-      "icon": "#d46139",
-      "pdfLink": "https://c2b-fbusiness.customs.gov.az/api/v1/notification/instructionFile/8",
-      "videoLink": "",
-      "link": "/home"
-    },
-    {
-      "id": 7,
-      "title": "Sərnişinlər üçün sadələşdirilmiş bəyannamə",
-      "desc": "Sərhədi keçərkən idxal və ya ixrac etmək istədiyiniz malları bəyan edə bilərsiniz. ",
-      "icon": "",
-      "pdfLink": "https://c2b-fbusiness.customs.gov.az/api/v1/notification/instructionFile/8",
-      "videoLink": "https://www.youtube.com/embed/s7_Bzjus5XU",
-      "link": "/customs-payments"
-    },
-    {
-      "id": 8,
-      "title": "Sərhəddə yük nəqliyyat vasitələrin sayı",
-      "desc": "Sərhəd gömrük postlarına doğru hərəkət edən və postlarda canlı növbədə gözləyən yük nəqliyyat vasitələrinin sa...",
-      "icon": "",
-      "pdfLink": "",
-      "videoLink": "",
-      "link": "/home"
-    },
-    {
-      "id": 9,
-      "title": "Mobil cihazların IMEI nömrəsinin yoxlanılması",
-      "desc": "Mobil cihazın IMEI nömrəsini yoxlaya bilərsiniz.",
-      "icon": "#d46139",
-      "pdfLink": "https://c2b-fbusiness.customs.gov.az/api/v1/notification/instructionFile/8",
-      "videoLink": "",
-      "link": "/home"
-    }
-  ]
+  {
+    "id": 1,
+    "title": "Elektron gömrük ödənişləri",
+    "desc": "Bütün növ gömrük ödənişlərini xidmət vasitəsi ilə ödəyə bilərsiniz.",
+    "icon": "#d46139",
+    "pdfLink": "https://c2b-fbusiness.customs.gov.az/api/v1/notification/instructionFile/8",
+    "videoLink": "",
+    "link": "/customs-payments"
+  },
+  {
+    "id": 2,
+    "title": "GÖÖEN",
+    "desc": "VÖEN-i olmayan fiziki şəxslərə verilir və şəxsə aid mallar üzərində gömrük rəsmiləşdirilməsi aparmaq üçün istifadə olunur.",
+    "icon": "",
+    "pdfLink": "https://c2b-fbusiness.customs.gov.az/api/v1/notification/instructionFile/8",
+    "videoLink": "https://www.youtube.com/embed/Xo0unMOot8E",
+    "link": "/gooen"
+  },
+  {
+    "id": 3,
+    "title": "E-növbə",
+    "desc": "Nəqliyyat vasitəsi ilə sərhəd buraxılış məntəqələrindən tez və rahat keçid üçün əvvəlcədən növbə tuta bilərsiniz.",
+    "icon": "",
+    "pdfLink": "",
+    "videoLink": "",
+    "link": "/queue"
+  },
+  {
+    "id": 4,
+    "title": "Mal nomenklaturası",
+    "desc": "Malların nomenklaturası və onlara tətbiq olunan tarif dərəcələri barədə məlumat əldə edə bilərsiniz. ",
+    "icon": "",
+    "pdfLink": "",
+    "videoLink": "",
+    "link": "/goods-nomenclature"
+  },
+  {
+    "id": 5,
+    "title": "Sərhədkeçmə məhdudiyyətinin yoxlanılması",
+    "desc": "Dövlət Gömrük Komitəsi tərəfindən gömrük öhdəlikləri üzrə sərhədkeçməyə qoyulan məhdudiyyət barədə məlumat əld...",
+    "icon": "",
+    "pdfLink": "https://c2b-fbusiness.customs.gov.az/api/v1/notification/instructionFile/8",
+    "videoLink": "https://www.youtube.com/embed/VMicweapykI",
+    "link": "/border-restrictions"
+  },
+  {
+    "id": 6,
+    "title": "Gömrük ödənişlərini (rüsumları) özün hesabla",
+    "desc": "İdxal və ixrac etdiyiniz mallar üzrə gömrük ödənişlərini (rüsumlarını) özünüz hesablaya bilərsiniz.",
+    "icon": "#d46139",
+    "pdfLink": "https://c2b-fbusiness.customs.gov.az/api/v1/notification/instructionFile/8",
+    "videoLink": "",
+    "link": "/calculator"
+  },
+  {
+    "id": 7,
+    "title": "Sərnişinlər üçün sadələşdirilmiş bəyannamə",
+    "desc": "Sərhədi keçərkən idxal və ya ixrac etmək istədiyiniz malları bəyan edə bilərsiniz. ",
+    "icon": "",
+    "pdfLink": "https://c2b-fbusiness.customs.gov.az/api/v1/notification/instructionFile/8",
+    "videoLink": "https://www.youtube.com/embed/s7_Bzjus5XU",
+    "link": "/customs-payments"
+  },
+  {
+    "id": 8,
+    "title": "Sərhəddə yük nəqliyyat vasitələrin sayı",
+    "desc": "Sərhəd gömrük postlarına doğru hərəkət edən və postlarda canlı növbədə gözləyən yük nəqliyyat vasitələrinin sa...",
+    "icon": "",
+    "pdfLink": "",
+    "videoLink": "",
+    "link": "/home"
+  },
+  {
+    "id": 9,
+    "title": "Mobil cihazların IMEI nömrəsinin yoxlanılması",
+    "desc": "Mobil cihazın IMEI nömrəsini yoxlaya bilərsiniz.",
+    "icon": "#d46139",
+    "pdfLink": "https://c2b-fbusiness.customs.gov.az/api/v1/notification/instructionFile/8",
+    "videoLink": "",
+    "link": "/check-imei"
+  }
+]

@@ -2,14 +2,14 @@ import React, { useState, useRef } from "react";
 import styles from "./styles.module.css";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 import { FaCheck } from "react-icons/fa";
+import { useReactToPrint } from "react-to-print";
+import axios from "axios";
 import { useForm, Controller } from "react-hook-form";
 import { TextField, Button } from "@mui/material";
 import { LocalizationProvider, DatePicker } from "@mui/x-date-pickers";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import Autocomplete from "@mui/material/Autocomplete";
 import dayjs, { Dayjs } from "dayjs";
-import axios from "axios";
-import { useReactToPrint } from "react-to-print";
 
 const countries = [
   { code: "031-AZE", label: "Azerbaijan", flag: "🇦🇿" },
@@ -128,7 +128,7 @@ const Gooen: React.FC = () => {
   return (
     <section className="container" style={{ paddingBottom: "40px" }}>
       {/* Title */}
-      <div className={styles.title}>
+      <div className="title">
         <h2>GÖÖEN - Gömrük ödənişlərinin ödəyicisinin eyniləşdirmə nömrəsi</h2>
         <p>
           <a href="https://e.customs.gov.az/for-individuals" target="_blank">
@@ -139,7 +139,6 @@ const Gooen: React.FC = () => {
         </p>
       </div>
 
-
       {/* Level */}
       <div className={styles.level}>
         <p
@@ -147,15 +146,18 @@ const Gooen: React.FC = () => {
             next == null || next == true || next == false ? styles.active : ""
           }
         >
-          <span>1</span><span>Axtarış</span>
+          <span>1</span>
+          <span>Axtarış</span>
         </p>
         <div></div>
         <p className={next == true || next == false ? styles.active : ""}>
-          <span>2</span><span>Şəxsi məlumatlar</span>
+          <span>2</span>
+          <span>Şəxsi məlumatlar</span>
         </p>
         <div></div>
         <p className={next == false ? styles.active : ""}>
-          <span>3</span><span>Son</span>
+          <span>3</span>
+          <span>Son</span>
         </p>
       </div>
 
@@ -274,10 +276,14 @@ const Gooen: React.FC = () => {
 
           <span className={styles.errorMsg}>{message}</span>
           <div className={styles.button}>
-            <Button variant="outlined" disabled>
+            {/* <Button variant="outlined" disabled>
               Geri
-            </Button>
-            <Button variant="contained" type="submit">
+            </Button> */}
+            <Button
+              variant="contained"
+              type="submit"
+              style={{ background: "#1647a3" }}
+            >
               İrəli
             </Button>
           </div>
@@ -330,10 +336,10 @@ const Gooen: React.FC = () => {
         className={styles.button}
         style={next != null && next != false ? {} : { display: "none" }}
       >
-        <Button variant="contained" onClick={() => setNext(null)}>
+        <Button variant="outlined" onClick={() => setNext(null)} style={{ color: "#1647a3", borderColor:"#1647a3" }}>
           Geri
         </Button>
-        <Button variant="contained" onClick={onFinal}>
+        <Button variant="contained" onClick={onFinal} style={{ background: "#1647a3" }}>
           İrəli
         </Button>
       </div>

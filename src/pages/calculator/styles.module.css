@@ -1,0 +1,9 @@
+.nav {
+  margin: 20px 0;
+}
+
+.text {
+  font-family: "Poppins", sans-serif !important;
+  text-transform: capitalize !important;
+  font-weight: 500 !important;
+}

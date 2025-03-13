@@ -1,0 +1,11 @@
+:root {
+  --main-color: #1647a3;
+  --border-color: rgb(225, 225, 225);
+  --info-color: rgb(13, 60, 97);
+  --info-bg: #e8f4fd;
+}
+
+::selection {
+  color: white;
+  background: var(--main-color);
+}

@@ -37,7 +37,7 @@ const CustomPayments: React.FC = () => {
 
   return (
     <section className="container">
-      <div className={styles.title}>
+      <div className="title">
         <h2>Elektron gömrük ödənişləri</h2>
         <p>
           <a href="https://e.customs.gov.az/for-xif" target="_blank">
@@ -123,6 +123,7 @@ const CustomPayments: React.FC = () => {
           )}
         </table>
       </div>
+
       <div className={styles.info}>
         <span>
           <IoIosInformationCircleOutline size={22} />

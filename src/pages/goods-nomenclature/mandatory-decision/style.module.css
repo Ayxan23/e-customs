@@ -1,0 +1,66 @@
+/* .tableBox */
+.tableBox {
+  position: relative;
+  border: 1px solid var(--border-color);
+  padding: 40px;
+  min-height: 300px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.tableBox table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+.tableBox :where(td, th) {
+  padding: 15px;
+  border: 1px solid var(--border-color);
+}
+.tableBox th {
+  font-weight: 500;
+}
+
+.tableBox thead {
+  border-bottom: 1px solid var(--border-color);
+  color: var(--main-color);
+}
+
+.desc {
+  text-align: start;
+}
+.notFound {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pages {
+  display: flex;
+  justify-content: end;
+  padding: 20px;
+}
+
+/* info */
+.info {
+  user-select: none;
+  color: var(--info-color);
+  background-color: var(--info-bg);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.info span {
+  min-width: 30px;
+  color: var(--main-color);
+}
