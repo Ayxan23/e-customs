@@ -6,7 +6,7 @@ import { useOutletContext } from "react-router-dom";
 import { Dispatch, SetStateAction } from "react";
 
 type ContextType = {
-  setTitle: Dispatch<SetStateAction<string>>;
+  setTitle?: Dispatch<SetStateAction<string>>;
 };
 
 type TreeNode = {
@@ -27,19 +27,30 @@ const fetchInitialData = async () => {
   return response.data.data;
 };
 
-export default function Nomenc() {
+type NomencProps = {
+  onSelect?: (data: string) => void;
+};
+
+export default function Nomenc({ onSelect }: NomencProps) {
   const [initialData, setInitialData] = useState<TreeNode[]>([]);
 
-  const { setTitle } = useOutletContext<ContextType>();
-  useEffect(() => setTitle(""), [setTitle]);
+  const context = useOutletContext<ContextType>();
+  useEffect(() => {
+    context?.setTitle?.("");
+  }, [context]);
 
   useEffect(() => {
     fetchInitialData().then(setInitialData);
   }, []);
 
+
   return (
     <div className={styles.wrapper}>
-      <TreeView data={initialData} fetchChildren={fetchChildren} />
+      <TreeView
+        data={initialData}
+        fetchChildren={fetchChildren}
+        onSelect={onSelect}
+      />
     </div>
   );
 }

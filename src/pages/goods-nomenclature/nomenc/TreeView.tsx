@@ -15,9 +15,15 @@ type TreeProps = {
   data: TreeNode[];
   fetchChildren: (key: string, id: number) => Promise<TreeNode[]>;
   level?: number;
+  onSelect?: (data: string) => void;
 };
 
-const Nomenclature = ({ data, fetchChildren, level = 0 }: TreeProps) => {
+const Nomenclature = ({
+  data,
+  fetchChildren,
+  onSelect,
+  level = 0,
+}: TreeProps) => {
   const [expandedNodes, setExpandedNodes] = useState<{
     [key: number]: TreeNode[];
   }>({});
@@ -70,7 +76,19 @@ const Nomenclature = ({ data, fetchChildren, level = 0 }: TreeProps) => {
         {nodes.map((node) => (
           <li key={node.id}>
             <button
-              onClick={() => node.children?.length !== 0 && toggleNode(node)}
+              onClick={() => {
+                if (node.children?.length !== 0) {
+                  toggleNode(node);
+                }
+                if (node.code != null) {
+                  if (
+                    (!node.children || node.children.length === 0) &&
+                    node.parentId !== 0
+                  ) {
+                    onSelect?.(node.code);
+                  }
+                }
+              }}
               className={selectedNode === node.id ? styles.selected : ""}
             >
               {(node.children && node.children.length > 0) ||
@@ -86,6 +104,7 @@ const Nomenclature = ({ data, fetchChildren, level = 0 }: TreeProps) => {
                 )
               ) : (
                 <span>
+                  <span className={styles.sendData} onClick={() => {}}></span>
                   <IoDocumentTextOutline />
                 </span>
               )}

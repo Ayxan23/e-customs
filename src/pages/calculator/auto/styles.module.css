@@ -1,0 +1,171 @@
+.wrapper {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.cart {
+  min-height: 50vh;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 40px;
+  flex: 1;
+}
+
+.cart h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--main-color);
+  margin-bottom: 25px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form * {
+  font-family: "Poppins" !important;
+}
+.numInput {
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.button button {
+  width: 100%;
+  padding: 10px;
+  text-transform: capitalize !important;
+}
+
+/* info */
+.info {
+  user-select: none;
+  color: var(--info-color);
+  background-color: var(--info-bg);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.info span {
+  min-width: 30px;
+  color: var(--main-color);
+}
+
+.info a {
+  color: var(--main-color);
+  font-weight: 500;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.result div {
+  font-size: 15px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 12px 0;
+  font-weight: 500;
+  color: var(--main-color);
+}
+.result div p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.result div p span {
+  height: 5px;
+  width: 5px;
+  background-color: #1976d2;
+  border-radius: 50%;
+  display: block;
+}
+
+.price {
+  white-space: nowrap;
+}
+
+.usd {
+  color: #1976d2;
+  text-align: end;
+  padding: 20px 0;
+  font-weight: 500;
+}
+
+/* total */
+.total {
+  border: 1px solid var(--border-color);
+  padding: 20px 30px;
+  border-radius: 8px;
+  background-color: #eef1f7;
+  color: var(--main-color);
+}
+
+.total div {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  padding: 8px 0;
+  border-bottom: 2px solid #f4584c;
+}
+
+.totalP {
+  font-weight: 500 !important;
+  margin: 5px 0;
+}
+
+.total div span {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.total h6 {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  gap: 4px;
+}
+.total h6 span {
+  font-size: 15px;
+}
+
+.totalInfo {
+  margin-top: 10px;
+  font-size: 15px;
+}
+.totalInfo a {
+  font-weight: 600;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.apiInfo {
+  color: var(--main-color);
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.apiInfo a{
+    text-decoration: underline;
+    font-weight: 500;
+    font-style: italic;
+}
+@media screen and (max-width: 950px) {
+  .wrapper {
+    flex-direction: column;
+  }
+}
