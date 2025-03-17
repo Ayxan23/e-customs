@@ -60,7 +60,7 @@
     "icon": "",
     "pdfLink": "https://c2b-fbusiness.customs.gov.az/api/v1/notification/instructionFile/8",
     "videoLink": "https://www.youtube.com/embed/s7_Bzjus5XU",
-    "link": "/customs-payments"
+    "link": "/passenger-declaration"
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "icon": "",
     "pdfLink": "",
     "videoLink": "",
-    "link": "/home"
+    "link": "/"
   },
   {
     "id": 9,

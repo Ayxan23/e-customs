@@ -66,7 +66,7 @@ const Main: React.FC = () => {
                 <h3>{item.title}</h3>
                 <span>{item.desc}</span>
               </span>
-              <div>
+              <div className={styles.hoverIcons}>
                 <span
                   onClick={(e) => {
                     e.preventDefault();
@@ -78,6 +78,8 @@ const Main: React.FC = () => {
                   style={{ color: item.pdfLink != "" ? "#1647a3" : "" }}
                 >
                   <FontAwesomeIcon icon={faFileContract} />
+                  <div className={styles.hoverIcon}>Təlimat</div>
+                  <div className={styles.triangle}></div>
                 </span>
                 <span
                   style={{ color: item.videoLink != "" ? "#1647a3" : "" }}
@@ -89,6 +91,8 @@ const Main: React.FC = () => {
                   }}
                 >
                   <FontAwesomeIcon icon={faFilm} />
+                  <div className={styles.hoverIcon}>Video təlimat</div>
+                  <div className={styles.triangle}></div>
                 </span>
               </div>
             </div>

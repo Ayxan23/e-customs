@@ -24,6 +24,10 @@ import CalculatorLayout from "./pages/calculator/CalculatorLayout";
 import Auto from "./pages/calculator/auto/Auto";
 import Goods from "./pages/calculator/goods/Goods";
 
+import PassengerLayout from "./pages/passenger-declaration/PassengerLayout";
+import Chekc from "./pages/passenger-declaration/check/Check";
+import Add from "./pages/passenger-declaration/add/Add";
+
 function App() {
   return (
     <Router>
@@ -47,6 +51,12 @@ function App() {
           <Route index element={<Navigate to="auto" replace />} />
           <Route path="auto" element={<Auto />} />
           <Route path="goods" element={<Goods />} />
+        </Route>
+
+        <Route path="/passenger-declaration" element={<PassengerLayout />}>
+          <Route index element={<Navigate to="chekc" replace />} />
+          <Route path="chekc" element={<Chekc />} />
+          <Route path="add" element={<Add />} />
         </Route>
       </Routes>
     </Router>
