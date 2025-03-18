@@ -1,0 +1,86 @@
+.wrapper {
+  min-height: 70vh;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  margin-top: 20px;
+  padding: 30px;
+  user-select: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  padding: 15px 20px;
+}
+
+.img {
+  display: flex;
+  gap: 10px;
+  font-weight: 600;
+  color: var(--main-color);
+  font-size: 20px;
+  border-bottom: 2px solid #20c959;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.name {
+  display: flex;
+  gap: 8px;
+  font-weight: 500;
+  align-items: center;
+  color: var(--main-color);
+  font-size: 18px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+  margin-left: 25px;
+  color: rgb(72, 72, 72);
+}
+
+.info p {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.info span {
+  font-weight: 600;
+  color: #f12b2c;
+}
+.info p:first-child span {
+  color: var(--main-color);
+}
+
+.link {
+  margin: 10px 0;
+  display: flex;
+  justify-content: end;
+  color: var(--main-color);
+  font-weight: 500;
+}
+
+.link span {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px 0;
+  gap: 5px;
+}
+
+.link span:hover {
+  background-color: #f5f5f5;
+}
+
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

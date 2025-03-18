@@ -105,6 +105,10 @@
   width: 500px;
 }
 
+/* .form * {
+  font-family: "Poppins" !important;
+} */
+
 .button {
   display: flex;
   justify-content: center;

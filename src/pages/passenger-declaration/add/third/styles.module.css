@@ -1,0 +1,79 @@
+.thirdWrapper {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.third {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  padding: 30px 20px;
+  flex: 1;
+  min-height: 60vh;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formWrapper,
+.first {
+  width: 100%;
+  max-width: 600px;
+}
+
+.flex {
+  display: inline !important;
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.button button {
+  width: 100%;
+}
+
+.formInfo {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 30px 20px;
+  flex: 0.5;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.formInfo h5 {
+  font-weight: 600;
+}
+
+.formInfo span {
+  font-weight: 500;
+}
+
+.formInfo div {
+  height: 4px;
+  background-color: #3f74d8;
+  border-radius: 200px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .thirdWrapper {
+    flex-direction: column;
+  }
+}
+
+.form * {
+  font-family: "Poppins" !important;
+  text-transform: capitalize !important;
+}

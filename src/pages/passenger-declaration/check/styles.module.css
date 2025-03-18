@@ -8,7 +8,7 @@
 .formWrapper {
   border: 1px solid var(--border-color);
   border-radius: 8px;
-  height: 80vh;
+  min-height: 80vh;
   padding: 40px;
   user-select: none;
   flex: 1;
@@ -80,3 +80,16 @@
 .form * {
   font-family: "Poppins" !important;
 }
+
+.errorMsg {
+  color: #f12b2c;
+  text-align: center;
+  margin: -10px 0;
+}
+
+@media screen and (max-width: 950px) {
+  .wrapper {
+    flex-direction: column;
+  }
+}
+

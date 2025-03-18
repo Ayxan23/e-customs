@@ -1,0 +1,126 @@
+.wrapper {
+  min-height: 70vh;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  margin-top: 20px;
+  padding: 30px;
+  user-select: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+  flex: 0.4;
+}
+
+.card {
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  padding: 15px 20px;
+}
+
+.img {
+  display: flex;
+  gap: 10px;
+  font-weight: 600;
+  color: var(--main-color);
+  font-size: 16px;
+  border-bottom: 2px solid #20c959;
+  padding-bottom: 5px;
+}
+
+.name {
+  display: flex;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  align-items: center;
+  color: var(--main-color);
+  cursor: pointer;
+  padding: 10px;
+}
+
+.name:hover {
+  background-color: rgb(241, 241, 241);
+}
+
+/* table */
+/* .tableBox */
+.tableBox {
+  position: relative;
+  border: 1px solid var(--border-color);
+  padding: 15px 20px;
+  min-height: 300px;
+  border-radius: 8px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tableBox table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+.tableBox :where(td, th) {
+  padding: 15px;
+  border: 1px solid var(--border-color);
+}
+.tableBox th {
+  font-weight: 600;
+  color: #1b55c1;
+}
+
+.tableBox td {
+  color: #154193;
+  font-weight: 700;
+}
+
+.tableBox h6 {
+  text-align: center;
+  color: var(--main-color);
+  font-weight: 600;
+  font-size: 17px;
+  margin: 20px 40px;
+  margin-top: 0;
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgb(227, 86, 114);
+}
+
+.tableBox thead {
+  border-bottom: 1px solid var(--border-color);
+  color: var(--main-color);
+}
+
+.notFound {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pages {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.pages p span {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 950px) {
+    .nav{
+        display: none;
+    }
+  }

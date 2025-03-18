@@ -1,0 +1,181 @@
+
+
+.errorMsg {
+  color: #f12b2c;
+  text-align: center;
+  margin-bottom: -20px;
+}
+
+/* .form */
+.first,
+.secondWrapper {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+.formWrapper {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  padding: 30px 20px;
+  flex: 1;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 500px;
+}
+
+.formInfo {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 30px 20px;
+  flex: 0.5;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.formInfo h5 {
+  font-weight: 600;
+}
+
+.formInfo span {
+  font-weight: 500;
+}
+
+.formInfo div {
+  height: 4px;
+  background-color: #3f74d8;
+  border-radius: 200px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .first,
+  .secondWrapper {
+    flex-direction: column;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.button button {
+  text-transform: capitalize !important;
+  padding: 8px 60px;
+}
+
+/* .second */
+.second {
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-weight: 500;
+  padding: 30px 40px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: rgb(111, 111, 111);
+  flex: 1;
+}
+
+.second div p {
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: #f4f4f4;
+  color: var(--main-color);
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+/* final */
+.final {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  height: 55vh;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-color);
+  font-weight: 600;
+  padding: 20px;
+}
+
+.final div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+.final span {
+  color: #f12b2c;
+}
+
+.final button {
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.final button:hover {
+  opacity: 0.9;
+}
+
+/* .print */
+.print {
+  border: 2px solid var(--main-color);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  padding: 40px 20px;
+  margin: 40px;
+  font-size: 22px;
+}
+
+.print h6 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #535353;
+}
+.print div {
+  display: flex;
+  gap: 20px;
+}
+.print p {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+.print p:first-child {
+  align-items: end;
+  font-weight: 400;
+  color: var(--main-color);
+}
+
+.form * {
+  font-family: "Poppins" !important;
+}
+
+.radioInput {
+  display: inline;
+}

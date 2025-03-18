@@ -27,6 +27,8 @@ import Goods from "./pages/calculator/goods/Goods";
 import PassengerLayout from "./pages/passenger-declaration/PassengerLayout";
 import Chekc from "./pages/passenger-declaration/check/Check";
 import Add from "./pages/passenger-declaration/add/Add";
+import LiveQueue from "./pages/live-queue/LiveQueue";
+import Detail from "./pages/live-queue/detail/Detail";
 
 function App() {
   return (
@@ -38,6 +40,8 @@ function App() {
         <Route path="/queue" element={<Queue />} />
         <Route path="/border-restrictions" element={<Restrictions />} />
         <Route path="/check-imei" element={<CheckImei />} />
+        <Route path="/live-queue" element={<LiveQueue />} />
+        <Route path="/live-queue/detail/:id/:page" element={<Detail />} />
 
         <Route path="/goods-nomenclature" element={<NomenLayout />}>
           <Route index element={<Navigate to="nomenc" replace />} />
