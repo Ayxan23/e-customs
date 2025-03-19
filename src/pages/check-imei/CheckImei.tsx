@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import styles from "./styles.module.css";
-import { IoIosInformationCircleOutline } from "react-icons/io";
 import axios from "axios";
 
 import { useForm, Controller } from "react-hook-form";
 import { TextField, Button } from "@mui/material";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import { MdOutlineWarningAmber } from "react-icons/md";
+import Title from "../../components/ui/title/Title";
+import Info from "../../components/ui/info/Info";
 
 type FormValues = {
   fin: string;
@@ -64,27 +65,15 @@ const CheckImei: React.FC = () => {
 
   return (
     <section className="container">
-      <div className="title">
-        <h2>IMEI nömrəsinin qeydiyyatını yoxlayın</h2>
-        <p>
-          <a href="https://e.customs.gov.az/" target="_blank">
-            Şəxsi kabinet
-          </a>
-          <span>/</span>
-          IMEI nömrəsinin qeydiyyatını yoxlayın
-        </p>
-      </div>
+      <Title
+        title="IMEI nömrəsinin qeydiyyatını yoxlayın"
+        linkTitle="Şəxsi kabinet"
+        url="https://e.customs.gov.az/"
+      />
 
       <div className={styles.input}>
         {/* Info */}
-        <div className={styles.info}>
-          <span>
-            <IoIosInformationCircleOutline size={22} />
-          </span>
-          <div>
-            <p>Mobil cihazların IMEI nömrəsinin yoxlanılması</p>
-          </div>
-        </div>
+        <Info desc="Mobil cihazların IMEI nömrəsinin yoxlanılması" />
 
         {/* Form */}
         <div className={styles.formWrapper}>
@@ -131,7 +120,7 @@ const CheckImei: React.FC = () => {
               {data?.data.status != "warning" ? (
                 <IoMdCheckmarkCircleOutline size={22} />
               ) : (
-                <MdOutlineWarningAmber size={22}/>
+                <MdOutlineWarningAmber size={22} />
               )}
             </span>
             <div>

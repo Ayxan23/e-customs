@@ -54,32 +54,6 @@
   }
 }
 
-/* info */
-.info {
-  user-select: none;
-  color: var(--info-color);
-  background-color: var(--info-bg);
-  padding: 24px 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  border-radius: 8px;
-  font-size: 14px;
-  /* display: none; */
-}
-
-.info span {
-  min-width: 30px;
-  color: var(--main-color);
-}
-
-.info h6 {
-  margin-top: 5px;
-  font-weight: 500;
-  color: #f12b2c;
-}
-
 .errorMsg {
   color: #f12b2c;
   text-align: center;

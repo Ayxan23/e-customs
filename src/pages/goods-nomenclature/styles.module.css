@@ -1,43 +1,65 @@
 /* nav */
 .nav {
-    display: flex;
-    margin-top: 20px;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-  }
-  .nav a {
-    color: var(--main-color);
-    font-weight: 500;
-    cursor: pointer;
-    padding: 5px 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-  }
-  .nav a:hover {
-    transition: 0.1s;
-    background-color: #e1ecff;
-  }
-  .nav div {
-    width: 1px;
-    background-color: var(--border-color);
-  }
-  
-  .nav a span{
-    transform: scaleX(-1) !important;
-    display: block;
-  }
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+.nav a {
+  color: var(--main-color);
+  font-weight: 500;
+  cursor: pointer;
+  padding: 5px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.nav a:hover {
+  transition: 0.1s;
+  background-color: #e1ecff;
+}
+.nav div {
+  width: 1px;
+  background-color: var(--border-color);
+}
 
-  .chName{
-    display: flex;
-    align-items: center;
-    font-size: 16px !important;
-  }
+.nav a span {
+  transform: scaleX(-1) !important;
+  display: block;
+}
 
-  .chName span{
-    font-size: 12px;
-  }
-  
+.chName {
+  display: flex;
+  align-items: center;
+  font-size: 16px !important;
+}
+
+.chName span {
+  font-size: 12px;
+}
+
+/* title */
+.title {
+  user-select: none;
+  margin-top: 30px;
+}
+.title h2 {
+  font-size: 22px;
+  font-weight: 500;
+}
+.title span {
+  margin: 0 5px;
+  font-size: 12px;
+}
+.title p {
+  color: #6b6b6b;
+}
+.title a {
+  color: var(--main-color);
+}
+.title a:hover {
+  text-decoration: underline;
+}

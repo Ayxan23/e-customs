@@ -7,8 +7,8 @@ import { LocalizationProvider, DatePicker } from "@mui/x-date-pickers";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import Autocomplete from "@mui/material/Autocomplete";
 import { Dayjs } from "dayjs";
-import { IoIosInformationCircleOutline } from "react-icons/io";
-import { IoIosSettings } from "react-icons/io";
+import { IoIosInformationCircleOutline, IoIosSettings } from "react-icons/io";
+import Info from "../../../components/ui/info/Info";
 
 import {
   FormControl,
@@ -451,19 +451,12 @@ const Auto: React.FC = () => {
         </div>
 
         {/* Info */}
-        <div className={styles.info}>
-          <span>
-            <IoIosInformationCircleOutline size={22} />
-          </span>
-          <div>
-            <p>
-              Diqqət! Gömrük ödənişləri daxil edilmiş məlumatlar əsasında
+        <Info
+          desc="Diqqət! Gömrük ödənişləri daxil edilmiş məlumatlar əsasında
               hesablanmışdır. Gömrük rəsmiləşdirilməsi zamanı malların gömrük
               dəyərinin müəyyənləşdirilməsi üsulundan asılı olaraq cəmi gömrük
-              ödənişlərində fərqlər yarana bilər.
-            </p>
-          </div>
-        </div>
+              ödənişlərində fərqlər yarana bilər."
+        />
       </div>
     </div>
   );

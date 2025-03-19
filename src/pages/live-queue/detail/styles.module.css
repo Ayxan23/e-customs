@@ -120,7 +120,7 @@
 }
 
 @media screen and (max-width: 950px) {
-    .nav{
-        display: none;
-    }
+  .nav {
+    display: none;
   }
+}

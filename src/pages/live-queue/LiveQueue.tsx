@@ -4,6 +4,7 @@ import { FaCarAlt } from "react-icons/fa";
 import { IoIosArrowForward } from "react-icons/io";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import Title from "../../components/ui/title/Title";
 
 type Transport = {
   postCode: number;
@@ -36,16 +37,11 @@ const LiveQueue: React.FC = () => {
   return (
     <section className="container">
       {/* Title */}
-      <div className="title">
-        <h2>Sərhəddə yük nəqliyyat vasitələrinin sayı</h2>
-        <p>
-          <a href="https://e.customs.gov.az/for-individuals" target="_blank">
-            Fiziki şəxslər üçün
-          </a>
-          <span>/</span>
-          Sərhəddə yük nəqliyyat vasitələrinin sayı
-        </p>
-      </div>
+      <Title
+        title="Sərhəddə yük nəqliyyat vasitələrinin sayı"
+        linkTitle="Fiziki şəxslər üçün"
+        url="https://e.customs.gov.az/for-individuals"
+      />
 
       <div className={styles.wrapper}>
         {data &&

@@ -1,0 +1,22 @@
+/* title */
+.title {
+    user-select: none;
+    margin-top: 30px;
+  }
+  .title h2 {
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .title span {
+    margin: 0 5px;
+    font-size: 12px;
+  }
+  .title p {
+    color: #6b6b6b;
+  }
+  .title a {
+    color: var(--main-color);
+  }
+  .title a:hover {
+    text-decoration: underline;
+  }

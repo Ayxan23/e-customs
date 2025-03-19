@@ -10,7 +10,7 @@ const NomenLayout = () => {
 
   return (
     <section className="container">
-      <div className="title">
+      <div className={styles.title}>
         <h2>Malların nomenklaturası</h2>
         <p className={styles.chName}>
           <a href="https://e.customs.gov.az/for-individuals" target="_blank">

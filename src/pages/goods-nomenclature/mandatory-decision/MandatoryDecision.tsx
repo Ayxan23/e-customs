@@ -9,8 +9,7 @@ import PaginationItem from "@mui/material/PaginationItem";
 import Stack from "@mui/material/Stack";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import { IoIosInformationCircleOutline } from "react-icons/io";
-
+import Info from "../../../components/ui/info/Info";
 type ContextType = {
   setTitle: Dispatch<SetStateAction<string>>;
 };
@@ -57,20 +56,13 @@ const MandatoryDecision: React.FC = () => {
     <>
       <div className={styles.tableBox}>
         {/* Info */}
-        <div className={styles.info}>
-          <span>
-            <IoIosInformationCircleOutline size={22} />
-          </span>
-          <div>
-            <p>
-              Malların təsnifatı üzrə qəbul edilmiş məcburi qərarların
+        <Info
+          desc="Malların təsnifatı üzrə qəbul edilmiş məcburi qərarların
               siyahısının nəşrinin əsas məqsədi tövsiyyə xarakteri daşımaqla
               gömrük bəyannamələrinin daha düzgün formada tərtib olunması üçün
               xarici ticarət iştirakçılarına əlavə imkanların yaradılmasından
-              ibarətdir.
-            </p>
-          </div>
-        </div>
+              ibarətdir."
+        />
 
         <table>
           <thead>

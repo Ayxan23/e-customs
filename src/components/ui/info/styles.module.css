@@ -1,0 +1,21 @@
+/* infos */
+.infos {
+  color: var(--info-color);
+  background-color: var(--info-bg);
+  padding: 24px 16px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.infos span {
+  min-width: 30px;
+  color: var(--main-color);
+}
+
+.infos h6 {
+  font-weight: 500;
+  font-size: 15px;
+}

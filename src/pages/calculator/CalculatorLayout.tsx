@@ -5,6 +5,7 @@ import { Tabs, Tab, Box } from "@mui/material";
 import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
 import InventoryIcon from "@mui/icons-material/Inventory";
 import { useState } from "react";
+import Title from "../../components/ui/title/Title";
 
 const CalculatorLayout = () => {
   const [value, setValue] = useState(0);
@@ -15,16 +16,11 @@ const CalculatorLayout = () => {
 
   return (
     <section className="container">
-      <div className="title">
-        <h2>Gömrük ödənişlərini özün hesabla</h2>
-        <p>
-          <a href="https://e.customs.gov.az/for-individuals" target="_blank">
-            Fiziki şəxslər üçün
-          </a>
-          <span>/</span>
-          Gömrük ödənişlərini özün hesabla
-        </p>
-      </div>
+      <Title
+        title="Gömrük ödənişlərini özün hesabla"
+        linkTitle="Fiziki şəxslər üçün"
+        url="https://e.customs.gov.az/for-individuals"
+      />
       <div className={styles.nav}>
         <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
           <Tabs

@@ -11,6 +11,7 @@ import { FaList } from "react-icons/fa";
 import Nomenc from "../../goods-nomenclature/nomenc/Nomenc";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Info from "../../../components/ui/info/Info";
 
 const prosess = [
   { code: "1", label: "İdxal" },
@@ -131,9 +132,8 @@ const Goods: React.FC = () => {
 
   const handleProses = (some: string) => {
     setValue("num4", some);
-    setClose(true)
+    setClose(true);
     trigger("proses");
-  
   };
 
   return (
@@ -143,7 +143,7 @@ const Goods: React.FC = () => {
           <span className={styles.close} onClick={() => setClose(true)}>
             <FontAwesomeIcon icon={faXmark} />
           </span>
-          <Nomenc onSelect={handleProses}/>
+          <Nomenc onSelect={handleProses} />
         </div>
       </div>
 
@@ -411,19 +411,12 @@ const Goods: React.FC = () => {
         </div>
 
         {/* Info */}
-        <div className={styles.info}>
-          <span>
-            <IoIosInformationCircleOutline size={22} />
-          </span>
-          <div>
-            <p>
-              Diqqət! Gömrük ödənişləri daxil edilmiş məlumatlar əsasında
+        <Info
+          desc="Diqqət! Gömrük ödənişləri daxil edilmiş məlumatlar əsasında
               hesablanmışdır. Gömrük rəsmiləşdirilməsi zamanı malların gömrük
               dəyərinin müəyyənləşdirilməsi üsulundan asılı olaraq cəmi gömrük
-              ödənişlərində fərqlər yarana bilər.
-            </p>
-          </div>
-        </div>
+              ödənişlərində fərqlər yarana bilər."
+        />
       </div>
     </div>
   );

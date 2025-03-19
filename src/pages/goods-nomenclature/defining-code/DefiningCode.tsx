@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useOutletContext } from "react-router-dom";
 import { Dispatch, SetStateAction } from "react";
-import { IoIosInformationCircleOutline, IoIosSearch } from "react-icons/io";
+import { IoIosSearch } from "react-icons/io";
 import styles from "./style.module.css";
 
 import { useForm, Controller } from "react-hook-form";
@@ -9,6 +9,7 @@ import { TextField, Button } from "@mui/material";
 import Autocomplete from "@mui/material/Autocomplete";
 import axios from "axios";
 import { Gauge, gaugeClasses } from "@mui/x-charts/Gauge";
+import Info from "../../../components/ui/info/Info";
 
 const counts = [
   { code: "1", label: "1" },
@@ -73,19 +74,12 @@ const DefiningCode: React.FC = () => {
   return (
     <div className={styles.wrapper}>
       {/* Info */}
-      <div className={styles.info}>
-        <span>
-          <IoIosInformationCircleOutline size={22} />
-        </span>
-        <div>
-          <p>
-            Diqqət! Axtarış son iki ildə gömrüyə bəyan edilən malların
+      <Info
+        desc="Diqqət! Axtarış son iki ildə gömrüyə bəyan edilən malların
             təsvirləri əsasında aparılır. Tövsiyyə olunan XİFMN kodarı yalnız
             maarifləndirmə xarakteri daşıyır və malın kodunun təyin edilməsi
-            üçün əsas deyil.
-          </p>
-        </div>
-      </div>
+            üçün əsas deyil."
+      />
 
       {/* Form */}
       <div className={styles.formWrapper}>
@@ -145,7 +139,11 @@ const DefiningCode: React.FC = () => {
           </div>
 
           <div className={styles.button}>
-            <Button variant="contained" type="submit" style={{ background: "#1647a3" }}>
+            <Button
+              variant="contained"
+              type="submit"
+              style={{ background: "#1647a3" }}
+            >
               <IoIosSearch size={22} />
             </Button>
             <Button
@@ -154,7 +152,7 @@ const DefiningCode: React.FC = () => {
                 reset();
                 setData(null);
               }}
-              style={{ color: "#1647a3", borderColor:"#1647a3" }}
+              style={{ color: "#1647a3", borderColor: "#1647a3" }}
             >
               Təmizlə
             </Button>

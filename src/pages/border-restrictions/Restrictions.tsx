@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styles from "./styles.module.css";
-import { IoIosInformationCircleOutline } from "react-icons/io";
 import axios from "axios";
 
 import { useForm, Controller } from "react-hook-form";
@@ -9,6 +8,8 @@ import { LocalizationProvider, DatePicker } from "@mui/x-date-pickers";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { Dayjs } from "dayjs";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+import Title from "../../components/ui/title/Title";
+import Info from "../../components/ui/info/Info";
 
 type FormValues = {
   nationality: string;
@@ -52,31 +53,19 @@ const Restrictions: React.FC = () => {
 
   return (
     <section className="container">
-      <div className="title">
-        <h2>Sərhədkeçmə məhdudiyyətinin yoxlanılması</h2>
-        <p>
-          <a href="https://e.customs.gov.az/for-individuals" target="_blank">
-            Fiziki şəxslər üçün
-          </a>
-          <span>/</span>
-          Sərhədkeçmə məhdudiyyətinin yoxlanılması
-        </p>
-      </div>
+      <Title
+        title="Sərhədkeçmə məhdudiyyətinin yoxlanılması"
+        linkTitle="Fiziki şəxslər üçün"
+        url="https://e.customs.gov.az/for-individuals"
+      />
 
       <div className={styles.input}>
         {/* Info */}
-        <div className={styles.info}>
-          <span>
-            <IoIosInformationCircleOutline size={22} />
-          </span>
-          <div>
-            <p>
-              Diqqət! Yalnız Dövlət Gömrük Komitəsi tərəfindən gömrük
+        <Info
+          desc="Diqqət! Yalnız Dövlət Gömrük Komitəsi tərəfindən gömrük
               öhdəlikləri üzrə sərhədkeçməyə qoyulan məhdudiyyət barədə məlumat
-              almaq olar.
-            </p>
-          </div>
-        </div>
+              almaq olar."
+        />
 
         {/* Form */}
         <div className={styles.formWrapper}>

@@ -63,7 +63,7 @@
 .content2 div {
   display: flex;
   justify-content: end;
-  color: rgb(186, 186, 186);
+  color: rgb(202, 202, 202);
 }
 
 .content span span,
@@ -140,7 +140,6 @@
 }
 
 /* .video */
-
 .video {
   position: absolute;
   width: 100%;
@@ -209,7 +208,7 @@
   display: none !important;
   position: absolute !important;
   white-space: nowrap !important;
-  background-color: var(--main-color) !important;
+  background-color: #0b92db !important;
   color: white !important;
   top: 46px !important;
   padding: 5px 10px !important;
@@ -226,6 +225,6 @@
   width: 0 !important;
   height: 0 !important;
   border-right: 5px solid transparent !important;
-  border-bottom: 6px solid var(--main-color) !important;
+  border-bottom: 6px solid #0b92db !important;
   border-left: 5px solid transparent !important;
 }

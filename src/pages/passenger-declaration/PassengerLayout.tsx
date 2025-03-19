@@ -1,18 +1,13 @@
 import { Outlet } from "react-router-dom";
-
+import Title from "../../components/ui/title/Title";
 const PassengerLayout = () => {
   return (
     <section className="container">
-      <div className="title">
-        <h2>Sərnişinlər üçün sadələşdirilmiş bəyannamə</h2>
-        <p>
-          <a href="https://e.customs.gov.az/for-individuals" target="_blank">
-            Fiziki şəxslər üçün
-          </a>
-          <span>/</span>
-          Sərnişinlər üçün sadələşdirilmiş bəyannamə
-        </p>
-      </div>
+      <Title
+        title="Sərnişinlər üçün sadələşdirilmiş bəyannamə"
+        linkTitle="Fiziki şəxslər üçün"
+        url="https://e.customs.gov.az/for-individuals"
+      />
 
       <Outlet />
     </section>

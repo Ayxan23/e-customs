@@ -75,14 +75,14 @@ const Main: React.FC = () => {
                     const url = item.pdfLink;
                     window.open(url, "_blank", "noopener,noreferrer");
                   }}
-                  style={{ color: item.pdfLink != "" ? "#1647a3" : "" }}
+                  style={{ color: item.pdfLink != "" ? "#0b92db" : "" }}
                 >
                   <FontAwesomeIcon icon={faFileContract} />
                   <div className={styles.hoverIcon}>Təlimat</div>
                   <div className={styles.triangle}></div>
                 </span>
                 <span
-                  style={{ color: item.videoLink != "" ? "#1647a3" : "" }}
+                  style={{ color: item.videoLink != "" ? "#0b92db" : "" }}
                   onClick={(e) => {
                     e.preventDefault();
                     e.stopPropagation();

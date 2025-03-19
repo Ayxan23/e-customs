@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import styles from "./styles.module.css";
-import { IoIosSearch, IoIosInformationCircleOutline } from "react-icons/io";
+import { IoIosSearch } from "react-icons/io";
+import Title from "../../components/ui/title/Title";
+import Info from "../../components/ui/info/Info";
 
 const CustomPayments: React.FC = () => {
   useEffect(() => {}, []);
@@ -37,16 +39,11 @@ const CustomPayments: React.FC = () => {
 
   return (
     <section className="container">
-      <div className="title">
-        <h2>Elektron gömrük ödənişləri</h2>
-        <p>
-          <a href="https://e.customs.gov.az/for-xif" target="_blank">
-            XİF iştirakçıları üçün
-          </a>
-          <span>/</span>
-          Elektron Gömrük ödənişləri
-        </p>
-      </div>
+      <Title
+        title="Elektron gömrük ödənişləri"
+        linkTitle="XİF iştirakçıları üçün"
+        url="https://e.customs.gov.az/for-xif"
+      />
 
       <div className={styles.inputBox}>
         <h6>Birbaşa ödənişlər</h6>
@@ -123,20 +120,12 @@ const CustomPayments: React.FC = () => {
           )}
         </table>
       </div>
-
-      <div className={styles.info}>
-        <span>
-          <IoIosInformationCircleOutline size={22} />
-        </span>
-        <div>
-          <h6>Qeyd</h6>
-          <p>
-            Borclar bölməsində yalnız sizin FİN-koda və ya VÖEN/GÖÖEN-ə bağlı
+      <Info
+        title="Qeyd"
+        desc="Borclar bölməsində yalnız sizin FİN-koda və ya VÖEN/GÖÖEN-ə bağlı
             olan ödənişlər göstərilir. Hər hansı digər gömrük ödənişlərini etmək
-            üçün “Birbaşa ödənişlər” bölməsindən istifadə edə bilərsiniz
-          </p>
-        </div>
-      </div>
+            üçün “Birbaşa ödənişlər” bölməsindən istifadə edə bilərsiniz"
+      />
     </section>
   );
 };

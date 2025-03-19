@@ -8,8 +8,8 @@ import { TextField, Button } from "@mui/material";
 import { LocalizationProvider, DatePicker } from "@mui/x-date-pickers";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { Dayjs } from "dayjs";
-import { IoIosInformationCircleOutline } from "react-icons/io";
 import { MdEdit } from "react-icons/md";
+import Info from "../../../components/ui/info/Info";
 
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/material.css";
@@ -84,19 +84,12 @@ const Chekc: React.FC = () => {
       {/* Form */}
       <div className={styles.formWrapper}>
         {/* Info */}
-        <div className={styles.info}>
-          <span>
-            <IoIosInformationCircleOutline size={22} />
-          </span>
-          <div>
-            <h6>Qeyd</h6>
-            <p>
-              Əgər bəyannaməni qeydiyyatdan keçmədən tərtib etmisinizsə, pasport
+        <Info
+          title="Qeyd"
+          desc="Əgər bəyannaməni qeydiyyatdan keçmədən tərtib etmisinizsə, pasport
               nömrənizi (və ya FİN-kod), doğum tarixinizi və mobil nömrənizi
-              daxil edərək bəyannaməni tapa və düzəliş edə bilərsiniz.
-            </p>
-          </div>
-        </div>
+              daxil edərək bəyannaməni tapa və düzəliş edə bilərsiniz."
+        />
         <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
           {/* FIN Input */}
           <Controller

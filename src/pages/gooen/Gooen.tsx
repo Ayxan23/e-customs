@@ -1,6 +1,5 @@
 import React, { useState, useRef } from "react";
 import styles from "./styles.module.css";
-import { IoIosInformationCircleOutline } from "react-icons/io";
 import { FaCheck } from "react-icons/fa";
 import { useReactToPrint } from "react-to-print";
 import axios from "axios";
@@ -10,6 +9,8 @@ import { LocalizationProvider, DatePicker } from "@mui/x-date-pickers";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import Autocomplete from "@mui/material/Autocomplete";
 import dayjs, { Dayjs } from "dayjs";
+import Title from "../../components/ui/title/Title";
+import Info from "../../components/ui/info/Info";
 
 const countries = [
   { code: "031-AZE", label: "Azerbaijan", flag: "🇦🇿" },
@@ -128,16 +129,11 @@ const Gooen: React.FC = () => {
   return (
     <section className="container" style={{ paddingBottom: "40px" }}>
       {/* Title */}
-      <div className="title">
-        <h2>GÖÖEN - Gömrük ödənişlərinin ödəyicisinin eyniləşdirmə nömrəsi</h2>
-        <p>
-          <a href="https://e.customs.gov.az/for-individuals" target="_blank">
-            Fiziki şəxslər üçün
-          </a>
-          <span>/</span>
-          GÖÖEN
-        </p>
-      </div>
+      <Title
+        title="GÖÖEN"
+        linkTitle="Fiziki şəxslər üçün"
+        url="https://e.customs.gov.az/for-individuals"
+      />
 
       {/* Level */}
       <div className={styles.level}>
@@ -162,29 +158,20 @@ const Gooen: React.FC = () => {
       </div>
 
       {/* Info */}
-      <div
-        className={styles.info}
-        style={next == null ? {} : { display: "none" }}
-      >
-        <span>
-          <IoIosInformationCircleOutline size={22} />
-        </span>
-        <div>
-          <p>
-            Gömrük ödənişlərinin ödəyicisinin eyniləşdirmə nömrəsi (GÖÖEN) -
+      <div style={next == null ? {} : { display: "none" }}>
+        <Info
+          desc="Gömrük ödənişlərinin ödəyicisinin eyniləşdirmə nömrəsi (GÖÖEN) -
             vergi ödəyicisi olmayan fiziki şəxslərə VÖEN əvəzi verilir və həmin
             şəxslərin gömrük sərhədindən keçirdikləri rüsuma cəlb olunan
             malların və nəqliyyat vasitələrinin üzərində gömrük
             rəsmiləşdirilməsi aparmasına imkan verir. Hüquqi şəxslər gömrük
             əməliyyatları aparmaq üçün mütləq VÖEN-ə sahib olmalıdırlar və bu
-            səbəbdən onlara GÖÖEN verilmir.
-          </p>
-          <h6>
-            Diqqət! Şəxsin razılığı olmadan onun haqqında məlumatların
+            səbəbdən onlara GÖÖEN verilmir."
+          title="      Diqqət! Şəxsin razılığı olmadan onun haqqında məlumatların
             yayılmasına görə Azərbaycan Respublikasının Cinayət Məcəlləsinə
-            əsasən hüquqi məsuliyyət daşıyırsınız.
-          </h6>
-        </div>
+            əsasən hüquqi məsuliyyət daşıyırsınız."
+          clr="red"
+        />
       </div>
 
       {/* Form */}
@@ -336,10 +323,18 @@ const Gooen: React.FC = () => {
         className={styles.button}
         style={next != null && next != false ? {} : { display: "none" }}
       >
-        <Button variant="outlined" onClick={() => setNext(null)} style={{ color: "#1647a3", borderColor:"#1647a3" }}>
+        <Button
+          variant="outlined"
+          onClick={() => setNext(null)}
+          style={{ color: "#1647a3", borderColor: "#1647a3" }}
+        >
           Geri
         </Button>
-        <Button variant="contained" onClick={onFinal} style={{ background: "#1647a3" }}>
+        <Button
+          variant="contained"
+          onClick={onFinal}
+          style={{ background: "#1647a3" }}
+        >
           İrəli
         </Button>
       </div>

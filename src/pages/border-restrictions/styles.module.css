@@ -7,23 +7,6 @@
   padding: 30px;
 }
 
-/* info */
-.info {
-  user-select: none;
-  color: var(--info-color);
-  background-color: var(--info-bg);
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  border-radius: 8px;
-  font-size: 14px;
-}
-
-.info span {
-  min-width: 30px;
-  color: var(--main-color);
-}
-
 /* .form */
 .formWrapper {
   display: flex;
