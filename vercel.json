@@ -4,14 +4,14 @@
         "runtime": "nodejs18.x"
       }
     },
-    "routes": [
+    "rewrites": [
       {
-        "src": "/api/(.*)",
-        "dest": "api-proxy/index.ts"
+        "source": "/api/(.*)",
+        "destination": "api-proxy/index.ts"
       },
       {
-        "src": "/(.*)",
-        "dest": "/index.html"
+        "source": "/(.*)",
+        "destination": "/index.html"
       }
     ]
   }
