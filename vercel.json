@@ -7,11 +7,11 @@
     "rewrites": [
       {
         "source": "/api/(.*)",
-        "destination": "api-proxy/index.ts"
+        "destination": "/api-proxy"
       },
       {
         "source": "/(.*)",
-      "destination": "/api-proxy"
+        "destination": "/index.html"
       }
     ]
   }
