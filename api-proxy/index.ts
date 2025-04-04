@@ -1,18 +1,17 @@
 export default async function handler(req, res) {
-  const { url, method, headers } = req;
+  const {  method } = req;
 
   // URL: /api/v1/goods → dışarıda sadece path'i almalıyız
-  const externalPath = url.replace(/^\/api/, "");
+  const externalPath = req.url?.replace(/^\/api/, "") || "";
   const externalUrl = `https://c2b-fbusiness.customs.gov.az${externalPath}`;
+  
 
   try {
     const response = await fetch(externalUrl, {
       method,
       headers: {
-        // Sadece gerekli başlıkları aktar
-        "Content-Type": "application/json",
-        ...headers,
-      },
+        "Content-Type": "application/json"
+      }
     });
 
     const data = await response.json();
